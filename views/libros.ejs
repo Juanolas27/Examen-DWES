@@ -1,0 +1,9 @@
+<%- include("templates/header")  %>
+
+    <h1>Welcome <%= usuario.nombre %></h1>
+    <h1>Visitas: <%= usuario.visitas %></h1>
+    <form action="/libros/coleccion/<%= usuario.id %>" method="post">
+        <button type="sumbit">Añadir coleccion libros</button>
+    </form>
+
+<%- include("templates/footer")  %>
